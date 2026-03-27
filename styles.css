@@ -6,7 +6,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #f0f2f5;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,6 @@ body {
 form {
   background: #ffffff;
   padding: 32px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -87,4 +86,28 @@ button.loading::after {
 
 @keyframes spin {
   to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+#settings-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #6b7280;
+  border-radius: 6px;
+}
+
+#settings-toggle:hover {
+  background: #e5e7eb;
+  color: #333;
+}
+
+#settings-toggle:active {
+  background: #d1d5db;
 }
